@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ETUSEC CTF – Mercimek</title>
+<meta name="description" content="ETUSEC CTF – Mercimek'e yardım et!">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Poppins:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap&subset=latin-ext" rel="stylesheet">
+<style>
+:root{--navy:#0b1430;--navy2:#13204a;--card:#16244f;--org:#ff8a1f;--yel:#ffc93c;--txt:#e9edf8;--mut:#9fb0d6}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Poppins,system-ui,sans-serif;color:var(--txt);
+background:radial-gradient(1200px 600px at 80% -10%,#22346f 0%,transparent 60%),linear-gradient(180deg,var(--navy) 0%,#070d22 100%);overflow-x:hidden}
+.stars{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 20% 30%,#fff8 50%,transparent 51%),radial-gradient(1.5px 1.5px at 70% 15%,#fff6 50%,transparent 51%),radial-gradient(1.5px 1.5px at 40% 70%,#fff5 50%,transparent 51%),radial-gradient(2px 2px at 85% 55%,#fff7 50%,transparent 51%),radial-gradient(1px 1px at 10% 85%,#fff6 50%,transparent 51%);animation:tw 6s ease-in-out infinite alternate}
+@keyframes tw{to{opacity:.4}}
+.wrap{max-width:720px;margin:0 auto;padding:20px 16px 40px;position:relative}
+.stop{display:flex;align-items:center;gap:14px;background:linear-gradient(90deg,var(--org),var(--yel));color:#1a1300;border-radius:18px;padding:12px 16px;box-shadow:0 10px 30px #ff8a1f33;animation:drop .7s cubic-bezier(.2,.9,.3,1.2) both}
+.line{font-family:"Baloo 2";font-weight:800;font-size:30px;line-height:1;background:var(--navy);color:var(--yel);border-radius:12px;padding:8px 12px 4px;min-width:64px;text-align:center}
+.stop h1{margin:0;font-family:"Baloo 2";font-weight:800;font-size:clamp(20px,5.5vw,28px);line-height:1.1}
+.stop small{display:block;font-weight:600;opacity:.75;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.card{margin-top:18px;background:linear-gradient(180deg,var(--card),var(--navy2));border:1px solid #ffffff14;border-radius:22px;padding:20px;box-shadow:0 20px 50px #0008;animation:up .8s .15s ease both}
+.card p{margin:0 0 14px;line-height:1.65;color:var(--txt)}
+.help{font-family:"Baloo 2";font-weight:800;font-size:clamp(20px,5vw,24px);color:var(--yel);margin:4px 0 10px;display:inline-block;padding:4px 14px;border-radius:12px;background:#ffc93c14;border:1px dashed #ffc93c66}
+.pill{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:14px;background:#070d22;color:var(--org);border:1px solid #ff8a1f66;border-radius:999px;padding:8px 16px}
+.img{margin-top:18px;border-radius:20px;overflow:hidden;border:3px solid #ffc93c55;box-shadow:0 16px 40px #0009;animation:up .8s .3s ease both}
+.img img{display:block;width:100%;height:auto}
+.btn{display:flex;justify-content:center;align-items:center;gap:10px;margin:22px auto 8px;max-width:420px;padding:16px 22px;border-radius:16px;text-decoration:none;font-family:"Baloo 2";font-weight:800;font-size:22px;color:#1a1300;background:linear-gradient(90deg,var(--org),var(--yel));box-shadow:0 10px 30px #ff8a1f55;transition:transform .15s,box-shadow .15s;animation:pulse 2.4s ease-in-out infinite}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 14px 36px #ff8a1f88}
+.note{text-align:center;color:var(--mut);font-size:13px;margin:6px 0 0}
+footer{text-align:center;margin-top:34px;color:var(--mut);font-family:"Baloo 2";font-weight:600;letter-spacing:.2em}
+.bus{position:fixed;bottom:12px;left:-80px;font-size:28px;animation:ride 14s linear infinite;opacity:.5}
+@keyframes ride{to{left:110vw}}
+@keyframes drop{from{opacity:0;transform:translateY(-20px)}}
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+@keyframes pulse{50%{box-shadow:0 10px 40px #ffc93c99}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head>
+<body><div class="stars"></div>
+<div class="wrap">
+<header class="stop"><div class="line">G4</div><div><small>Sonraki durak: ???</small><h1>ETUSEC CTF – Mercimek</h1></div></header>
+<main class="card">
+<p>G4 otobüsü yine tıklım tıklım. Bizim kedi Mercimek derse yetişmeye çalışıyor. Kalabalıktan dışarıyı göremiyor. "Hangi durakta inecektim, yoksa geçtik mi?" diye paniklemeye başlıyor.</p>
+<div class="help">🕵️‍♂️ Mercimek'e yardım et!</div>
+<p>Bu dosyada saklı 3 farklı flag var. Önce dosyanın derinliklerine in, sonra çantasındaki o gizli bileti ortaya çıkar ve onu doğru durakta indir! 🐾</p>
+<span class="pill">( Flag formatı: ETUSEC{....} )</span>
+</main>
+<div class="img"><img src="/challenge.jpg?v=7" alt="Metroda çantalı kedi Mercimek" width="1008" height="1792"></div>
+<a class="btn" href="/challenge.jpg?v=7" download="challenge.jpg">⬇ Dosyayı indir</a>
+<p class="note">Ekran görüntüsü alma, dosyanın kendisini indir.</p>
+<footer>ETUSEC CTF</footer>
+</div><div class="bus">🚌</div>
+</body></html>
